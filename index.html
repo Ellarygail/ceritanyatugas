@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi Kombinasi - Kelompok 1</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-list { text-align: left; margin-top: 15px; font-size: 1.1rem; }
+        .team-list li { margin-bottom: 5px; list-style-position: inside; }
+        .desc-small { font-size: 1.1rem; line-height: 1.6; }
+        .type-card { padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .type-card h3 { margin-bottom: 10px; font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Dots for Presentation -->
+    <nav class="nav-dots">
+        <a href="#cover" class="dot active" data-tooltip="Cover"></a>
+        <a href="#pengertian" class="dot" data-tooltip="Pengertian"></a>
+        <a href="#rumus" class="dot" data-tooltip="Rumus"></a>
+        <a href="#jenis" class="dot" data-tooltip="Jenis"></a>
+        <a href="#contoh" class="dot" data-tooltip="Contoh"></a>
+        <a href="#data" class="dot" data-tooltip="Data"></a>
+        <a href="#result" class="dot" data-tooltip="Penyelesaian"></a>
+        <a href="#reflection" class="dot" data-tooltip="Refleksi"></a>
+    </nav>
+
+    <div class="presentation-container">
+        
+        <!-- Slide 1: Cover -->
+        <section id="cover" class="slide bg-yellow pattern-grid">
+            <div class="floating-icons">
+                <i class="fa-solid fa-calculator icon icon-1"></i>
+                <i class="fa-solid fa-ruler-combined icon icon-2"></i>
+                <i class="fa-solid fa-compass icon icon-3"></i>
+            </div>
+            <div class="content text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="badge">Matematika Wajib</div>
+                <h1 class="title-huge text-blue">KOMBINASI</h1>
+                <p class="subtitle text-dark-blue">Presented by Group 1</p>
+                <div class="team-box bg-white shadow-block border-blue">
+                    <h3 class="text-blue">Nama Team:</h3>
+                    <ul class="team-list text-dark-blue">
+                        <li>1. Alifa Jatil Ijah</li>
+                        <li>2. Khansa Syafiqah Aurellia</li>
+                        <li>3. Maesya Safinatunazza Ghifari</li>
+                        <li>4. Noviana Nila Sukma</li>
+                        <li>5. Siska Wulandari</li>
+                    </ul>
+                </div>
+                <div class="scroll-indicator">
+                    <p>Scroll untuk mulai</p>
+                    <i class="fa-solid fa-chevron-down bounce"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Pengertian -->
+        <section id="pengertian" class="slide bg-light-blue pattern-dots">
+            <div class="content row">
+                <div class="col-left" data-aos="fade-right">
+                    <div class="section-tag bg-yellow text-dark-blue">01</div>
+                    <h2 class="title text-dark-blue">Pengertian</h2>
+                    <p class="desc desc-small">Kombinasi dan permutasi dalam perhitungan merupakan hal yang mirip, tetapi sesungguhnya berbeda. Permutasi merupakan pengaturan dari himpunan baik sebagian maupun keseluruhan, tetapi harus memperhatikan urutan dari elemennya.</p>
+                    <p class="desc desc-small">Sedangkan <strong>kombinasi</strong> juga pengaturan dari himpunan baik sebagian maupun keseluruhan dan <strong>tidak perlu memperhatikan urutan</strong> dalam pengaturan himpunannya.</p>
+                    <div class="info-card bg-white shadow-block border-blue p-3 mt-3">
+                        <i class="fa-solid fa-lightbulb text-yellow"></i>
+                        <p>Dengan kata lain, kombinasi adalah suatu aturan pencacahan/penyusunan yang tidak memperhatikan urutan objeknya.</p>
+                    </div>
+                </div>
+                <div class="col-right flex-center" data-aos="fade-left">
+                    <div class="image-box shadow-block bg-white flex-center p-4">
+                        <img src="https://api.iconify.design/noto:people-hugging.svg" alt="Group of people" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Rumus -->
+        <section id="rumus" class="slide bg-blue pattern-math text-white">
+            <div class="content text-center" data-aos="fade-up">
+                <div class="section-tag bg-white text-blue mx-auto">02</div>
+                <h2 class="title text-white">Rumus Kombinasi</h2>
+                <p class="desc max-w-md mx-auto">Misalkan diketahui himpunan memiliki anggota sejumlah n, maka pemilihan r buah anggota dinamakan kombinasi r dari n, ditulis sebagai C(n,r) dimana r lebih kecil atau sama dengan n.</p>
+                
+                <div class="formula-box bg-white shadow-block text-dark-blue my-4" data-aos="flip-up" data-aos-delay="200">
+                    <div class="math-formula">
+                        <span class="big-var">C(n,r)</span> = <span class="fraction"><span class="top">n!</span><span class="bottom">r!(n-r)!</span></span>
+                    </div>
+                    <p class="mt-3" style="font-size: 1.2rem; font-family: monospace;">atau <b>nCr = n! / r!(n-r)!</b></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Jenis-Jenis Kombinasi -->
+        <section id="jenis" class="slide bg-white pattern-grid">
+            <div class="content text-center">
+                <div class="section-tag bg-blue text-white mx-auto" data-aos="fade-down">03</div>
+                <h2 class="title text-dark-blue" data-aos="fade-down">Jenis - Jenis Kombinasi</h2>
+                
+                <div class="row-2 text-left my-4">
+                    <div class="type-card bg-light-blue shadow-sm border-blue" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-blue">1. Kombinasi Sederhana (Tanpa Pengulangan)</h3>
+                        <p>Memilih "r" objek dari "n" objek yang berbeda, tanpa pengulangan.</p>
+                    </div>
+                    <div class="type-card bg-yellow shadow-sm border-yellow" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-dark-blue">2. Kombinasi Dengan Pengulangan</h3>
+                        <p>Memilih r objek dari n jenis objek, di mana objek yang sama boleh dipilih lebih dari satu kali.</p>
+                    </div>
+                    <div class="type-card bg-blue text-white shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-white">3. Dari Beberapa Kelompok (Aturan Perkalian)</h3>
+                        <p>Terjadi jika harus memilih objek dari dua atau lebih himpunan yang berbeda. Hasilnya adalah perkalian kombinasi masing-masing kelompok.<br><b>Rumus: C(n1, r1) x C(n2, r2) x ...</b></p>
+                    </div>
+                    <div class="type-card bg-dark-blue text-white shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-white">4. Dengan Syarat Khusus</h3>
+                        <p><b>Pasti Terpilih:</b> Kurangi n dan r dengan jumlah objek yang wajib terpilih (n-k, r-k).<br><b>Pasti Ditolak:</b> Kurangi n dengan jumlah objek yang ditolak, namun r tetap (n-k, r).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Contoh Soal -->
+        <section id="contoh" class="slide bg-yellow pattern-dots">
+            <div class="content row">
+                <div class="col-left" data-aos="fade-right">
+                    <div class="section-tag bg-blue text-white">04</div>
+                    <h2 class="title text-dark-blue">Contoh Soal</h2>
+                    <div class="question-box bg-white shadow-block p-4 border-blue">
+                        <i class="fa-solid fa-code text-blue icon-large"></i>
+                        <p class="desc mt-3">Dalam sebuah tim pengembangan web portfolio, terdapat <strong>5 programmer</strong>. Akan dipilih <strong>2 orang</strong> secara acak untuk berkolaborasi menulis kode JavaScript. Berapa banyak kombinasi pasangan programmer yang bisa dibentuk?</p>
+                    </div>
+                </div>
+                <div class="col-right" data-aos="fade-left">
+                    <div class="result-box shadow-block bg-blue text-white text-center p-4">
+                        <h3 class="mb-3 text-yellow">Penyelesaian:</h3>
+                        <p class="desc-small text-left">n = 5, r = 2</p>
+                        <div class="calc-steps text-left my-2" style="font-size: 1rem;">
+                            <div class="step">C(5, 2) = 5! / 2!(5 - 2)!</div>
+                            <div class="step">C(5, 2) = (5 × 4 × 3!) / (2 × 1 × 3!)</div>
+                            <div class="step">C(5, 2) = 20 / 2</div>
+                        </div>
+                        <div class="bg-yellow text-dark-blue p-2 border-radius" style="font-size: 1.5rem; font-weight: bold;">= 10 Kombinasi</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Data (FILLED) -->
+        <section id="data" class="slide bg-light-blue pattern-grid">
+            <div class="content text-center">
+                <div class="section-tag bg-yellow text-dark-blue mx-auto" data-aos="fade-down">05</div>
+                <h2 class="title text-dark-blue" data-aos="fade-down">Data (Studi Kasus Tambahan)</h2>
+                <p class="desc max-w-md mx-auto" data-aos="fade-up">Sebagai pelengkap materi, mari kita buat sebuah data simulasi untuk melihat bagaimana rumus kombinasi digunakan dalam skala yang lebih besar.</p>
+                
+                <div class="data-cards row-2 my-4">
+                    <div class="data-card bg-white shadow-block border-blue" data-aos="flip-left">
+                        <div class="data-icon bg-blue text-white"><i class="fa-solid fa-users"></i></div>
+                        <h3>Total Data (n)</h3>
+                        <p class="number text-blue">10 Siswa</p>
+                        <p>Total anggota kelas yang tersedia</p>
+                    </div>
+                    <div class="data-card bg-white shadow-block border-yellow" data-aos="flip-right" data-aos-delay="200">
+                        <div class="data-icon bg-yellow text-dark-blue"><i class="fa-solid fa-user-check"></i></div>
+                        <h3>Yang Dipilih (r)</h3>
+                        <p class="number text-yellow">4 Siswa</p>
+                        <p>Untuk membentuk kepengurusan inti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Result (FILLED) -->
+        <section id="result" class="slide bg-blue text-white pattern-math">
+            <div class="content row">
+                <div class="col-left" data-aos="fade-right">
+                    <div class="section-tag bg-white text-blue">06</div>
+                    <h2 class="title text-white">Result (Penyelesaian Data)</h2>
+                    <p class="desc">Berdasarkan data <strong>n = 10</strong> dan <strong>r = 4</strong>, berikut adalah hasil perhitungannya:</p>
+                    
+                    <div class="calc-steps my-3 text-dark-blue" style="font-size: 1.1rem;">
+                        <div class="step bg-white">1. C(10,4) = 10! / (4! × (10-4)!)</div>
+                        <div class="step bg-white">2. C(10,4) = (10×9×8×7×6!) / (4×3×2×1 × 6!)</div>
+                        <div class="step bg-white">3. C(10,4) = 5040 / 24</div>
+                        <div class="step highlight bg-yellow text-dark-blue p-2 border-radius" style="font-weight:bold;">4. C(10,4) = 210 Cara</div>
+                    </div>
+                </div>
+                <div class="col-right flex-center" data-aos="zoom-in">
+                    <div class="result-box shadow-block bg-white text-dark-blue text-center p-4">
+                        <i class="fa-solid fa-chart-pie text-yellow icon-huge bounce"></i>
+                        <h3 class="mt-3">Hasil Akhir:</h3>
+                        <p class="result-number text-blue">210 Kombinasi</p>
+                        <p>Terdapat 210 cara berbeda untuk membentuk kepengurusan dari 10 siswa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Reflection (FILLED) -->
+        <section id="reflection" class="slide bg-white pattern-grid">
+            <div class="content text-center">
+                <div class="section-tag bg-blue text-white mx-auto" data-aos="fade-down">07</div>
+                <h2 class="title text-dark-blue" data-aos="fade-down">Reflection</h2>
+                
+                <div class="reflection-box bg-light-blue shadow-block border-blue mx-auto mt-4 p-4 max-w-md text-left" data-aos="fade-up">
+                    <i class="fa-solid fa-quote-left text-blue icon-large mb-2"></i>
+                    <p class="desc-text text-dark-blue" style="font-size:1.1rem; line-height:1.6;">
+                        Mempelajari kombinasi bukan sekadar menghafal rumus, melainkan melatih <strong>logika pengambilan keputusan</strong>. Dalam kehidupan nyata, seringkali kita dihadapkan pada pilihan-pilihan di mana hierarki atau urutan tidak penting, melainkan <em>kehadiran</em> dan <em>keterlibatan</em> elemen tersebut dalam sebuah kelompok yang utama.
+                    </p>
+                    <p class="desc-text mt-2 text-dark-blue" style="font-size:1.1rem; line-height:1.6;">
+                        Ini mengajarkan kita tentang probabilitas, objektivitas, dan efisiensi dalam mengelola kemungkinan (seperti membentuk tim proyek, memilih jadwal, atau analisis peluang).
+                    </p>
+                    <i class="fa-solid fa-quote-right text-blue icon-large float-right mt-2"></i>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
