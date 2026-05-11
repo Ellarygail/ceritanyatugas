@@ -29,9 +29,10 @@
         <a href="#pengertian" class="dot" data-tooltip="Pengertian"></a>
         <a href="#rumus" class="dot" data-tooltip="Rumus"></a>
         <a href="#jenis" class="dot" data-tooltip="Jenis"></a>
-        <a href="#contoh" class="dot" data-tooltip="Contoh"></a>
-        <a href="#data" class="dot" data-tooltip="Data"></a>
-        <a href="#result" class="dot" data-tooltip="Penyelesaian"></a>
+        <a href="#contoh-1" class="dot" data-tooltip="Contoh 1"></a>
+        <a href="#contoh-2" class="dot" data-tooltip="Contoh 2"></a>
+        <a href="#contoh-3" class="dot" data-tooltip="Contoh 3"></a>
+        <a href="#contoh-4" class="dot" data-tooltip="Contoh 4"></a>
         <a href="#reflection" class="dot" data-tooltip="Refleksi"></a>
     </nav>
 
@@ -132,12 +133,12 @@
             </div>
         </section>
 
-        <!-- Slide 5: Contoh Soal -->
-        <section id="contoh" class="slide bg-yellow pattern-dots">
+        <!-- Slide 5: Contoh 1 (Sederhana) -->
+        <section id="contoh-1" class="slide bg-yellow pattern-dots">
             <div class="content row">
                 <div class="col-left" data-aos="fade-right">
                     <div class="section-tag bg-blue text-white">04</div>
-                    <h2 class="title text-dark-blue">Contoh Soal</h2>
+                    <h2 class="title text-dark-blue">1. Contoh Sederhana</h2>
                     <div class="question-box bg-white shadow-block p-4 border-blue">
                         <i class="fa-solid fa-code text-blue icon-large"></i>
                         <p class="desc mt-3">Dalam sebuah tim pengembangan web portfolio, terdapat <strong>5 programmer</strong>. Akan dipilih <strong>2 orang</strong> secara acak untuk berkolaborasi menulis kode JavaScript. Berapa banyak kombinasi pasangan programmer yang bisa dibentuk?</p>
@@ -145,8 +146,8 @@
                 </div>
                 <div class="col-right" data-aos="fade-left">
                     <div class="result-box shadow-block bg-blue text-white text-center p-4">
-                        <h3 class="mb-3 text-yellow">Penyelesaian:</h3>
-                        <p class="desc-small text-left">n = 5, r = 2</p>
+                        <h3 class="mb-3 text-yellow">Jawaban:</h3>
+                        <p class="desc-small text-left">Diketahui: n = 5, r = 2</p>
                         <div class="calc-steps text-left my-2" style="font-size: 1rem;">
                             <div class="step">C(5, 2) = 5! / 2!(5 - 2)!</div>
                             <div class="step">C(5, 2) = (5 × 4 × 3!) / (2 × 1 × 3!)</div>
@@ -158,60 +159,89 @@
             </div>
         </section>
 
-        <!-- Slide 6: Data (FILLED) -->
-        <section id="data" class="slide bg-light-blue pattern-grid">
-            <div class="content text-center">
-                <div class="section-tag bg-yellow text-dark-blue mx-auto" data-aos="fade-down">05</div>
-                <h2 class="title text-dark-blue" data-aos="fade-down">Data (Studi Kasus Tambahan)</h2>
-                <p class="desc max-w-md mx-auto" data-aos="fade-up">Sebagai pelengkap materi, mari kita buat sebuah data simulasi untuk melihat bagaimana rumus kombinasi digunakan dalam skala yang lebih besar.</p>
-                
-                <div class="data-cards row-2 my-4">
-                    <div class="data-card bg-white shadow-block border-blue" data-aos="flip-left">
-                        <div class="data-icon bg-blue text-white"><i class="fa-solid fa-users"></i></div>
-                        <h3>Total Data (n)</h3>
-                        <p class="number text-blue">10 Siswa</p>
-                        <p>Total anggota kelas yang tersedia</p>
+        <!-- Slide 6: Contoh 2 (Dengan Pengulangan) -->
+        <section id="contoh-2" class="slide bg-light-blue pattern-grid">
+            <div class="content row">
+                <div class="col-left" data-aos="fade-right">
+                    <div class="section-tag bg-yellow text-dark-blue">05</div>
+                    <h2 class="title text-dark-blue">2. Kombinasi Pengulangan</h2>
+                    <div class="question-box bg-white shadow-block p-4 border-yellow">
+                        <i class="fa-solid fa-cake-candles text-yellow icon-large"></i>
+                        <p class="desc mt-3">Sebuah toko kue menjual <strong>3 jenis kue</strong>: Donat, Bolu, dan Sus. Seseorang ingin membeli <strong>4 buah kue</strong> (boleh memilih jenis yang sama berulang kali). Berapa banyak variasi kue yang bisa ia beli?</p>
                     </div>
-                    <div class="data-card bg-white shadow-block border-yellow" data-aos="flip-right" data-aos-delay="200">
-                        <div class="data-icon bg-yellow text-dark-blue"><i class="fa-solid fa-user-check"></i></div>
-                        <h3>Yang Dipilih (r)</h3>
-                        <p class="number text-yellow">4 Siswa</p>
-                        <p>Untuk membentuk kepengurusan inti</p>
+                </div>
+                <div class="col-right" data-aos="fade-left">
+                    <div class="result-box shadow-block bg-white text-dark-blue text-center p-4">
+                        <h3 class="mb-3 text-blue">Jawaban:</h3>
+                        <p class="desc-small text-left">n = 3 (jenis kue), r = 4 (yang dibeli)</p>
+                        <div class="calc-steps text-left my-2 text-dark-blue" style="font-size: 1rem;">
+                            <div class="step bg-light-blue">Rumus: C(n+r-1, r)</div>
+                            <div class="step bg-light-blue">C(3+4-1, 4) = C(6, 4)</div>
+                            <div class="step bg-light-blue">C(6, 4) = 6! / (4! × 2!)</div>
+                            <div class="step bg-light-blue">C(6, 4) = (6 × 5) / 2</div>
+                        </div>
+                        <div class="bg-blue text-white p-2 border-radius" style="font-size: 1.5rem; font-weight: bold;">= 15 Variasi</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 7: Result (FILLED) -->
-        <section id="result" class="slide bg-blue text-white pattern-math">
+        <!-- Slide 7: Contoh 3 (Aturan Perkalian) -->
+        <section id="contoh-3" class="slide bg-blue text-white pattern-math">
             <div class="content row">
                 <div class="col-left" data-aos="fade-right">
                     <div class="section-tag bg-white text-blue">06</div>
-                    <h2 class="title text-white">Result (Penyelesaian Data)</h2>
-                    <p class="desc">Berdasarkan data <strong>n = 10</strong> dan <strong>r = 4</strong>, berikut adalah hasil perhitungannya:</p>
-                    
-                    <div class="calc-steps my-3 text-dark-blue" style="font-size: 1.1rem;">
-                        <div class="step bg-white">1. C(10,4) = 10! / (4! × (10-4)!)</div>
-                        <div class="step bg-white">2. C(10,4) = (10×9×8×7×6!) / (4×3×2×1 × 6!)</div>
-                        <div class="step bg-white">3. C(10,4) = 5040 / 24</div>
-                        <div class="step highlight bg-yellow text-dark-blue p-2 border-radius" style="font-weight:bold;">4. C(10,4) = 210 Cara</div>
+                    <h2 class="title text-white">3. Aturan Perkalian</h2>
+                    <div class="question-box bg-dark-blue shadow-block p-4 border-yellow">
+                        <i class="fa-solid fa-venus-mars text-yellow icon-large"></i>
+                        <p class="desc mt-3 text-white">Dalam suatu kelas terdapat <strong>6 siswa laki-laki</strong> dan <strong>4 siswa perempuan</strong>. Akan dipilih <strong>3 laki-laki</strong> dan <strong>2 perempuan</strong> untuk perwakilan. Berapa banyak cara pemilihannya?</p>
                     </div>
                 </div>
-                <div class="col-right flex-center" data-aos="zoom-in">
+                <div class="col-right" data-aos="fade-left">
                     <div class="result-box shadow-block bg-white text-dark-blue text-center p-4">
-                        <i class="fa-solid fa-chart-pie text-yellow icon-huge bounce"></i>
-                        <h3 class="mt-3">Hasil Akhir:</h3>
-                        <p class="result-number text-blue">210 Kombinasi</p>
-                        <p>Terdapat 210 cara berbeda untuk membentuk kepengurusan dari 10 siswa.</p>
+                        <h3 class="mb-3 text-blue">Jawaban:</h3>
+                        <div class="calc-steps text-left my-2" style="font-size: 0.95rem;">
+                            <div class="step bg-light-blue">1. Laki-laki: C(6,3) = (6×5×4) / (3×2×1) = 20</div>
+                            <div class="step bg-light-blue">2. Perempuan: C(4,2) = (4×3) / (2×1) = 6</div>
+                            <div class="step bg-light-blue">Total = C(6,3) × C(4,2)</div>
+                        </div>
+                        <div class="bg-yellow text-dark-blue p-2 border-radius" style="font-size: 1.5rem; font-weight: bold;">20 × 6 = 120 Cara</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 8: Reflection (FILLED) -->
+        <!-- Slide 8: Contoh 4 (Syarat Khusus) -->
+        <section id="contoh-4" class="slide bg-white pattern-grid">
+            <div class="content row">
+                <div class="col-left" data-aos="fade-right">
+                    <div class="section-tag bg-blue text-white">07</div>
+                    <h2 class="title text-dark-blue">4. Syarat Khusus</h2>
+                    <div class="question-box bg-light-blue shadow-block p-4 border-blue">
+                        <i class="fa-solid fa-user-check text-blue icon-large"></i>
+                        <p class="desc mt-3">Dari <strong>8 orang pelamar kerja</strong>, akan diterima <strong>3 orang</strong> sebagai karyawan. Jika 1 orang pelamar sudah <strong>pasti diterima</strong>, berapa banyak cara memilih karyawan sisanya?</p>
+                    </div>
+                </div>
+                <div class="col-right" data-aos="fade-left">
+                    <div class="result-box shadow-block bg-blue text-white text-center p-4">
+                        <h3 class="mb-3 text-yellow">Jawaban:</h3>
+                        <p class="desc-small text-left">Kapasitas (r) = 3. Total awal (n) = 8.<br>Karena 1 pasti diterima, maka:</p>
+                        <div class="calc-steps text-left my-2" style="font-size: 0.95rem;">
+                            <div class="step">Sisa yang harus dipilih: r = 3 - 1 = 2</div>
+                            <div class="step">Sisa pelamar: n = 8 - 1 = 7</div>
+                            <div class="step">Hitung C(7, 2) = 7! / (2! × 5!)</div>
+                            <div class="step">C(7, 2) = (7 × 6) / 2</div>
+                        </div>
+                        <div class="bg-yellow text-dark-blue p-2 border-radius" style="font-size: 1.5rem; font-weight: bold;">= 21 Cara</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Reflection (FILLED) -->
         <section id="reflection" class="slide bg-white pattern-grid">
             <div class="content text-center">
-                <div class="section-tag bg-blue text-white mx-auto" data-aos="fade-down">07</div>
+                <div class="section-tag bg-blue text-white mx-auto" data-aos="fade-down">08</div>
                 <h2 class="title text-dark-blue" data-aos="fade-down">Reflection</h2>
                 
                 <div class="reflection-box bg-light-blue shadow-block border-blue mx-auto mt-4 p-4 max-w-md text-left" data-aos="fade-up">
